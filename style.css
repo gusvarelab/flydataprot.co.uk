@@ -1,0 +1,552 @@
+  /*
+   Theme Name:   SKUDO
+   Theme URI:    http://skudo.co.uk/
+   Description:  Theme developed with bootstrap
+   Author:       Gustavo Varela Belloso
+   Author URI:   http://gustavovarela.com
+   
+   Version:      1.0.0
+   License:      GNU General Public License v2 or later
+   License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+   Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+   
+   */
+  /*!
+   * Start Bootstrap - Modern Business (http://startbootstrap.com/)
+   * Copyright 2013-2016 Start Bootstrap
+   * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+   */
+
+  /* Global Styles 
+  <!-- Bootstrap Core CSS -->
+  @import url("css/bootstrap.min.css");
+  <!-- Custom CSS -->
+  @import url("css/bootstrap.css");
+  <!-- Custom Fonts -->
+  @import url("font-awesome/css/font-awesome.min.css");*/
+
+  @font-face {
+    font-family: 'Regular';
+    src: url('fonts/GarageGothic/GarageGothic-Regular.ttf');
+  }
+
+  html,
+  body {
+    height: 100%;
+    font-family: 'Regular', 'Georgia', serif;
+  }
+
+  body {
+    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+  }
+
+  .img-portfolio {
+    margin-bottom: 30px;
+  }
+
+  .img-hover:hover {
+    opacity: 0.8;
+  }
+  section {
+    padding: 1rem 0 1rem 0;
+  }
+  /* header */ 
+  header {
+    background-color: #E6E0D6;
+  }
+  /* Home Page Carousel */
+
+  header.carousel {
+    height: 50vh;
+  }
+
+  header.carousel .item,
+  header.carousel .item.active,
+  header.carousel .carousel-inner {
+    height: 100%;
+  }
+
+  header.carousel .fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+
+  }
+  .navBar {
+    background-color: #00AFEF;
+    color:white !important;
+    font-size: 1.4em;
+    border-color: transparent;
+  }
+  .navBar  li > a{
+    background-color: #00AFEF;
+    color:white !important;
+    text-transform:uppercase;
+  }
+  button.navbar-toggle.navBar {
+    border-color: transparent;
+}
+  .navBar  li > a:hover{
+    color: #00AFEF !important;
+    background-color:white !important;
+    text-transform:uppercase;
+  }
+  .navBar > button{
+    border-color:transparent;
+  }
+  .dropdown-menu{
+    font-size: 1em;
+    padding: 0px;
+  }
+  .dropdown-menu > li > a:hover {
+    color: #00AFEF !important;
+    background-color: white;
+}
+  #countdown{
+    float: left;
+    padding: 12px 0px 0px 0px;
+    color: magenta;
+    font-size: 1.4em;
+    line-height: 1em;
+  }
+  .countdown-text{
+    float: left;
+    padding: 12px 0px 0px 0px;
+    color: magenta;
+    font-size: 1.4em;
+    line-height: 1em;
+  }
+  /* 404 Page Styles */
+
+  .error-404 {
+    font-size: 100px;
+  }
+
+  /* Pricing Page Styles */
+
+  .price {
+    display: block;
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .price sup {
+    top: -20px;
+    left: 2px;
+    font-size: 20px;
+  }
+
+  .period {
+    display: block;
+    font-style: italic;
+  }
+
+  /* Footer Styles */
+
+  footer {
+    color:#00AFEF;
+    padding-top: 1rem;
+  }
+
+
+  /* Responsive Styles */
+
+  @media(max-width:991px) {
+    .customer-img,
+    .img-related {
+      margin-bottom: 30px;
+    }
+    p#banner-msg > br{
+      display:none;
+    }
+    #img2p{
+      display: none;
+    }
+    #countdown{
+      float: left;
+      padding: 0px 5px 0px 0px; 
+      color: magenta;
+      font-size: 1em; 
+      line-height: 1em;
+    }
+    #about h4{
+    padding-top: 1em;
+    padding-left: 1em;
+    margin: 0px;
+    text-transform:uppercase;
+  }
+
+.www > p {
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+}
+  }
+
+  @media(max-width:767px) {
+    .img-portfolio {
+      margin-bottom: 15px;
+    }
+
+    header.carousel .carousel {
+      height: 70%;
+    }
+    p#banner-msg {
+
+font-size: 1.8em;
+
+line-height: 1.1em;
+
+margin-top:1.4em;
+
+padding-top: 1.5em;
+
+}
+    p#banner-msg > br{
+      display:none;
+    }
+    #countdown{
+      float: left;
+      padding: 0px 5px 0px 0px; 
+      color: magenta;
+      font-size: 1em; 
+      line-height: 1em;
+    }
+    #shieldScreen .shield{
+   /* margin-top: -400px;
+    margin-left: -175px;
+    width: 350px;*/
+    
+  }
+  #shieldScreen .logo{
+    
+    /* margin-top: -182px; */
+    /* margin-left: 1%; */
+    /* width: 300px; */
+    /* margin-right: 0; */
+  }
+  div#logo {
+    transform: translate(-50%, -50%);
+    /*width: 71%;
+    margin-top: 21%;*/
+  }
+
+  .centered{
+    position: absolute;
+    top:50%;
+    left:50%;
+  }
+  /*about section */
+  #img2{
+    display: none;
+  }
+  #img2p{
+    display: block;
+  }
+  #about h4{
+    padding-top: 1em;
+    padding-left: 1em;
+    margin: 0px;
+    text-transform:uppercase;
+  }
+
+.www > p {
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+}
+
+  #img3{
+    display: none;
+  }
+}
+
+@media (min-width: 979px) {
+  ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
+  }
+  p#banner-msg > br{
+    display:none;
+  }
+  #img2p{
+    display: none;
+  }
+  #countdown{
+    float: left;
+    padding: 0px 5px 0px 0px; 
+    color: magenta;
+    font-size: 1em; 
+    line-height: 1em;
+  }
+}
+
+@media (min-width: 1470px) {
+  #about{
+    max-width:1470px;
+    margin: 0px auto;
+  }
+}
+
+div.presentation > div {
+  color:white;
+  background-color: #00AFEF;
+  height: inherit;
+}
+
+/* Section shield Screen */
+#shieldScreen .back{
+  background-color: #00AFEF;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top:0;
+  z-index: 997;
+}
+#shieldScreen .logo{
+  /* margin-top: 0; */
+  /* margin-left: 0; */
+  /* width: 576px; */
+  /* height: 364px; */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /*background: url('img/logo_no_shield.png'); */
+  transform: translate(-50%, -50%);
+  background-repeat: no-repeat;
+  z-index: 998;
+}
+#shieldScreen .shield{
+    /*margin-top: -400px;
+    margin-left: -300px;
+    width: 600px; */
+    /* height: 800px; */
+    position: absolute;
+    top: -52.5%;
+    /*left: 50%;*/
+    transform: translate(-50%, -102%);
+    /*margin-top: -68%;
+    margin-left: -55%;
+    width: 600px; */
+    /* height: 800px; */
+    /* background: url('img/shield.png'); */
+    background-repeat: no-repeat;
+    z-index: 999;
+  }
+  .shield{margin: 0 auto;width:100%;height:100%;/* background: url('img/shield.png'); */background-repeat: no-repeat;z-index: 999;}
+
+  img.logo_no_shield{
+   /* margin-left:-50%;
+   margin-top:-50%;*/
+ }
+  /*
+  .divElement{
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      margin-top: -500px;
+      margin-left: -1000px;
+      width: 2000px;
+      height: 1000px;
+  }
+
+  .brand{
+      background: url('img/logo_no_shield.png');
+      
+  }
+  */
+
+  /* BANNER SECTION */
+  #banner{
+    background-color: #E6E0D6;
+    margin-top: -50px;
+  }
+  /* Section slide */
+  .msg{
+    
+    background-color: #E6E0D6;
+    /*background:url('img/slide-teaser.png') no-repeat center;*/
+    background-size: cover;
+    width:100%;
+    /*height:50vh;*/
+    /*padding-bottom: 50vh;*/
+  }
+  .msg >p {
+
+    width:80%;
+    margin:50px auto 0px auto;
+    padding-top:1em;
+    padding-bottom:1em;
+    font-size:4em;
+    line-height:1em;
+    font-style:normal;
+    color:#00AFEF;
+    text-align:justify;
+    text-transform:uppercase;
+    font-weight: bold;
+  }
+  /* Clock section */
+  .clock {
+    position:absolute;
+    margin-top:50px;
+    top:5vw;
+    left:5vw;
+    border-radius:50%;
+    
+    width:20vw;
+    height:20vw;
+    background: rgba(255, 0, 255, 0.6);
+  }
+  .inner {
+    position:relative;
+    top:2vw;
+    left:2vw;
+    border-radius:50%;
+    background-color: antiquewhite;
+    width:16vw;
+    height:16vw;
+  }
+  .hours-container {
+    padding-top:50px;
+    position: relative;
+    top: 8vw;
+    right: 0vw;
+    bottom: 0;
+    left: -0vw;
+    transform-origin: 50% 0%;
+  }
+  .hours {
+    background: blue;
+    height: 5vw;
+    width: 2.5%;
+    top: 22.5%;
+    left: 50%;
+    position: relative;
+    margin-top: 4vw;
+    
+  }
+  @keyframes rotate {
+    100% {
+      transform: rotateZ(360deg);
+    }
+  }
+  .hours-container {
+    animation: rotate 60s infinite linear;
+  }
+  
+  #animSec{
+    padding: 1rem 0 1rem 0;
+  }
+  #animSec video{
+    margin: 0 auto;
+  }
+  /* About section */
+  main{
+    color:white;
+    background-color: #00AFEF;
+  }
+
+#about .container {
+    padding: 0px;
+}
+  
+  #about{
+    padding:0px;
+  }
+  #img2p{
+   /* display: none;*/
+ }
+ .www{
+   padding:0px;
+ }
+ #about h4{
+    padding-top: 1em;
+    padding-left: 1em;
+    margin: 0px;
+    text-transform:uppercase;
+    font-size:26px;
+  }
+
+.www > p {
+  padding-left: 1em;
+  padding-top: 1rem;
+  padding-right: 1em;
+  padding-bottom: 1rem;
+  font-size:21px;
+}
+
+ /* Features section */
+ .features{
+  background-color: white;
+  color: #00AFEF;
+}
+.width-wrapper{
+  width:80%;
+}
+.play-button {
+    /* display: none; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* height: 100%; */
+    border-color: transparent;
+    background-color: transparent;
+    opacity: 0.5;
+    margin: 0px -15px 0px -15px;
+    transform: translate(-32%,-50%);
+}
+#play_btn{
+  font-size:4em;
+  color:white;
+  transform: translate(0%,0%);
+}
+/*Services section */
+.panel-heading {
+  color:magenta !important;
+  background-color: white !important;
+}
+.panel-body {
+  color:#00AFEF !important;
+  background-color: white !important;
+}
+/* case studeis section */
+#caseStudies{
+  color:#00AFEF !important;
+  background-color: white !important;
+}
+
+/* Call to action section */
+#callToAction {
+  background-color: white !important;
+  color:white !important;
+}
+
+.well{
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  background-color: #E6E0D6;
+  color:#00AFEF !important;
+}
+.well .btn{
+  color: magenta;
+}
+/*contact page */ 
+body.contact{
+  color: #00AFEF;
+
+}
+section.contact{
+  font-size: 2em;
+  text-transform: uppercase;
+}
+#button{
+  background-color: #00AFEF;
+
+  color:rgba(255, 0, 255, 0.6);
+  font-size: 1em !important;
+}
+.col-xs-12.vid-wrapper {
+    padding: 1rem;
+}
